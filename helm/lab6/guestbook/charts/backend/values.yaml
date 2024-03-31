@@ -1,0 +1,17 @@
+namespace: helm3
+replicaCount: 1
+image:
+  repository: phico/backend
+  tag: "2.0"
+service:
+  type: LoadBalancer
+  port: 80
+secret:
+  mongodb_uri:
+    username: your_db_username
+    password: your_db_password
+    dbchart: database
+    dbport: 27017
+    dbconn: "guestbook?authSource=admin"
+ingress:
+  host: helmbe.ibera.fun

@@ -1,0 +1,9 @@
+namespace: helm3
+service:
+  type: NodePort
+  port: 27017
+secret:
+  mongodb_username: YWRtaW4=
+  mongodb_password: cGFzc3dvcmQ=
+volume:
+  storage: 100Mi
